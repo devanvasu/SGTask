@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="18dp"
+        >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/fileDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagePreview"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:layout_centerInParent="true"
+
+        android:visibility="visible" />
+    <Button
+        android:id="@+id/chooseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fileDetailsTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerInParent="true"
+        android:text="@string/choose_image"
+        android:visibility="visible" />
+    <Button
+        android:id="@+id/previewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chooseButton"
+        android:layout_marginTop="16dp"
+        android:text="@string/preview"
+        android:layout_centerInParent="true"
+
+        android:visibility="visible" />
+
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/previewButton"
+        android:layout_marginTop="16dp"
+        android:text="@string/submit"
+        android:layout_centerInParent="true"
+
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submitButton"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+</layout>
